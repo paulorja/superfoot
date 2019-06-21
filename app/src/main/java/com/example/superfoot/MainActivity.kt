@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
+        val btnRanking:Button = findViewById(R.id.btn_ranking)
+        btnRanking.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, TelaRanking::class.java).apply {
+            }
+            startActivity(intent)
+        })
+
         val btnCarrinho:ImageButton = findViewById(R.id.btn_carrinho)
         btnCarrinho.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, TelaLoja::class.java).apply {

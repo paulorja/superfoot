@@ -57,6 +57,14 @@
                 android:textColor="#FFFFFF"
                 android:background="#4683C0"
                 android:id="@+id/btn_jogar" android:padding="20dp"/>
+        <Button
+                android:text="Ranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36dp"
+                android:textColor="#FFFFFF"
+                android:background="#4683C0"
+                android:id="@+id/btn_ranking" android:padding="20dp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
