@@ -7,4 +7,61 @@
         android:layout_height="match_parent"
         tools:context=".TelaTime">
 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:padding="10dp">
+                <TextView
+                        android:text="Dinheiro em caixa:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView8" android:layout_weight="0"
+                        android:textSize="24sp"/>
+                <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="41dp" app:srcCompat="@drawable/money"
+                        android:id="@+id/imageView5" android:layout_weight="0"/>
+                <TextView
+                        android:text="$ 100000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/dinheiro_jogador"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/background_dark" android:textSize="24sp"/>
+            </LinearLayout>
+            <Button
+                    android:text="Formação"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/btn_formacao"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/table_jogadores">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" app:srcCompat="@drawable/ata"
+                            android:id="@+id/imageView3" android:layout_weight="1"/>
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content" android:id="@+id/textView6"
+                            android:layout_weight="1"/>
+                    <Button
+                            android:text="Detalhes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/button2"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

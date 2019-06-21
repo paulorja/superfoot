@@ -6,10 +6,57 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".TelaEstadio">
-
-    <TextView
-            android:text="Estádio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="57dp"
-            tools:layout_editor_absoluteX="107dp" android:id="@+id/textView3"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:padding="10dp">
+                <TextView
+                        android:text="Dinheiro em caixa:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView8" android:layout_weight="0"
+                        android:textSize="24sp"/>
+                <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="41dp" app:srcCompat="@drawable/money"
+                        android:id="@+id/imageView5" android:layout_weight="0"/>
+                <TextView
+                        android:text="$ 100000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/dinheiro_jogador"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/background_dark" android:textSize="24sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Capacidade atual: 10000 pessoas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/est_capacidade_atual"
+                        android:textSize="24sp"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" app:srcCompat="@drawable/soccer_field"
+                        android:id="@+id/imageView2"/>
+                <TextView
+                        android:text="Adicionar 1000 lugares:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/est_capacidade_atual2"
+                        android:textSize="32sp"/>
+                <Button
+                        android:text="$5000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/btn_melhorar_estadio"
+                        android:textSize="48sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

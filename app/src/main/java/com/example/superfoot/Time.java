@@ -1,23 +1,36 @@
 package com.example.superfoot;
 
+import org.jetbrains.annotations.Nullable;
+
 public class Time {
 
+    private int id;
     private String nome;
     private String isJogador;
-    private int capacidade_estadio;
     private int pontos;
     private int dinheiro;
     private int formacao;
     private int tatica;
+    private int capacidadeEstadio;
+    private int capacidadeEstadioTotal;
 
-    public Time(String nome, String isJogador, int capacidade_estadio, int pontos, int dinheiro, int formacao, int tatica) {
+    public Time(int id, String nome, String isJogador, int capacidade_estadio, int pontos, int dinheiro, int formacao, int tatica) {
+        this.id = id;
         this.nome = nome;
         this.isJogador = isJogador;
-        this.capacidade_estadio = capacidade_estadio;
+        this.capacidadeEstadio = capacidade_estadio;
         this.pontos = pontos;
         this.dinheiro = dinheiro;
         this.formacao = formacao;
         this.tatica = tatica;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -36,12 +49,16 @@ public class Time {
         this.isJogador = isJogador;
     }
 
-    public int getCapacidade_estadio() {
-        return capacidade_estadio;
+    public int getCapacidadeEstadio() {
+        return capacidadeEstadio;
     }
 
-    public void setCapacidade_estadio(int capacidade_estadio) {
-        this.capacidade_estadio = capacidade_estadio;
+    public void setCapacidadeEstadio(int capacidade_estadio) {
+        this.capacidadeEstadio = capacidade_estadio;
+    }
+
+    public int getCapacidadeEstadioTotal() {
+        return 10000 + capacidadeEstadio*1000;
     }
 
     public int getPontos() {
