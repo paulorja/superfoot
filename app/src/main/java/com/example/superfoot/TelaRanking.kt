@@ -2,10 +2,7 @@ package com.example.superfoot
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
+import android.widget.*
 
 class TelaRanking : AppCompatActivity() {
 
@@ -16,13 +13,17 @@ class TelaRanking : AppCompatActivity() {
         var bancoController = BancoController(baseContext)
 
         var times = bancoController.findTimes()
-        var table: TableLayout = findViewById(R.id.table_ranking)
+        var table: LinearLayout = findViewById(R.id.table_ranking)
         table.removeAllViews()
+
+        var i = 1
         for(t in times) {
-            var row = TableRow(this)
+            var row = LinearLayout(this)
+            row.orientation = LinearLayout.HORIZONTAL;
+
 
             var textTime = TextView(this)
-            textTime.setText(t.nome)
+            textTime.setText(i.toString() + " - " + t.nome + "(" + t.pontos.toString() + " pontos)")
 
             var buttonDetalhes = Button(this)
             buttonDetalhes.setText("Detalhes")
@@ -31,6 +32,8 @@ class TelaRanking : AppCompatActivity() {
             row.addView(buttonDetalhes)
 
             table.addView(row)
+
+            i += 1
         }
 
     }

@@ -7,9 +7,68 @@
         android:layout_height="match_parent"
         tools:context=".tela_jogar">
 
-    <Button
-            android:text="voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="250dp"
-            tools:layout_editor_absoluteX="62dp" android:id="@+id/t_jogar_btn_voltar"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="RESULTADOS DOS JOGOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="30sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:gravity="center|center_horizontal|center_vertical">
+                <TextView
+                        android:text="FLAMENGO 3 - 0 SAO PAULO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_1"
+                        android:layout_marginTop="50sp"/>
+                <TextView
+                        android:text="FLAMENGO 3 - 0 SAO PAULO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_2" android:gravity="center"/>
+                <TextView
+                        android:text="FLAMENGO 3 - 0 SAO PAULO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_3" android:gravity="center"/>
+                <TextView
+                        android:text="FLAMENGO 3 - 0 SAO PAULO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_4" android:gravity="center"/>
+                <TextView
+                        android:text="FLAMENGO 3 - 0 SAO PAULO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_5" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Voce venceu!"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/resultado_titulo"
+                        android:textSize="24sp" android:gravity="center" android:layout_marginTop="50sp"/>
+                <TextView
+                        android:text="pontos por vencer: 3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView9"/>
+                <TextView
+                        android:text="dinheiro recebido: 1000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView10"/>
+                <Button
+                        android:text="Voltar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

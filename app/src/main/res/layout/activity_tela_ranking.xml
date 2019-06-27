@@ -7,14 +7,44 @@
         android:layout_height="match_parent"
         tools:context=".TelaRanking">
 
-    <TableLayout
-            android:layout_width="395dp"
-            android:layout_height="715dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp"
-            android:id="@+id/table_ranking">
-
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-    </TableLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="158dp" app:srcCompat="@drawable/trofeu" android:id="@+id/imageView4"
+                        android:foregroundGravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/table_ranking">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" app:srcCompat="@drawable/ata"
+                            android:id="@+id/imageView3" android:layout_weight="1"/>
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_weight="1"/>
+                    <Button
+                            android:text="Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
